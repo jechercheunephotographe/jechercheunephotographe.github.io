@@ -9,23 +9,22 @@
                 * { margin: 0; padding: 0; box-sizing: border-box; }
 
                 :root {
-                              --noir: #000000;
                               --blanc: #FFFFFF;
+                              --noir: #000000;
                               --vert-fluo: #39FF14;
-                              --gris-fonce: #1a1a1a;
-                              --gris-moyen: #333333;
+                              --gris-leger: #f5f5f5;
                 }
 
                 body {
-                              font-family: 'Courier New', monospace;
-                              background: var(--noir);
-                              color: var(--blanc);
+                              font-family: Arial, sans-serif;
+                              background: var(--blanc);
+                              color: var(--noir);
                               line-height: 1.6;
                 }
 
                 /* HEADER & NAV */
                 header {
-                              background: var(--noir);
+                              background: var(--blanc);
                               border-bottom: 3px solid var(--vert-fluo);
                               padding: 30px 20px;
                               position: sticky;
@@ -44,7 +43,7 @@
                 .logo {
                               font-size: 28px;
                               font-weight: bold;
-                              color: var(--vert-fluo);
+                              color: var(--noir);
                               text-decoration: none;
                               text-transform: uppercase;
                               letter-spacing: 2px;
@@ -57,7 +56,7 @@
                 }
 
                 nav a {
-                              color: var(--blanc);
+                              color: var(--noir);
                               text-decoration: none;
                               text-transform: uppercase;
                               font-size: 13px;
@@ -84,7 +83,7 @@
                 /* HERO */
                 .hero {
                               min-height: 80vh;
-                              background: linear-gradient(135deg, var(--gris-fonce) 0%, var(--noir) 100%);
+                              background: linear-gradient(135deg, var(--gris-leger) 0%, var(--blanc) 100%);
                               display: flex;
                               align-items: center;
                               justify-content: center;
@@ -96,7 +95,7 @@
                 .hero-content h1 {
                               font-size: 72px;
                               margin-bottom: 20px;
-                              color: var(--vert-fluo);
+                              color: var(--noir);
                               text-transform: uppercase;
                               letter-spacing: 3px;
                               line-height: 1.2;
@@ -104,7 +103,7 @@
 
                 .hero-content p {
                               font-size: 18px;
-                              color: var(--blanc);
+                              color: var(--noir);
                               margin-bottom: 40px;
                               max-width: 600px;
                               margin-left: auto;
@@ -127,7 +126,7 @@
                               transition: all 0.3s;
                               border: 2px solid var(--vert-fluo);
                               cursor: pointer;
-                              font-family: 'Courier New', monospace;
+                              font-family: Arial, sans-serif;
                               font-weight: bold;
                 }
 
@@ -137,13 +136,13 @@
                 }
 
                 .btn-primary:hover {
-                              background: var(--noir);
-                              color: var(--vert-fluo);
+                              background: var(--blanc);
+                              color: var(--noir);
                 }
 
                 .btn-secondary {
-                              background: transparent;
-                              color: var(--vert-fluo);
+                              background: var(--blanc);
+                              color: var(--noir);
                 }
 
                 .btn-secondary:hover {
@@ -165,7 +164,7 @@
                 .section h2 {
                               font-size: 48px;
                               margin-bottom: 50px;
-                              color: var(--vert-fluo);
+                              color: var(--noir);
                               text-transform: uppercase;
                               letter-spacing: 2px;
                               text-align: center;
@@ -181,7 +180,7 @@
                 }
 
                 .card {
-                              background: var(--gris-fonce);
+                              background: var(--blanc);
                               border: 2px solid var(--vert-fluo);
                               padding: 30px;
                               transition: transform 0.3s, box-shadow 0.3s;
@@ -193,7 +192,7 @@
                 }
 
                 .card h3 {
-                              color: var(--vert-fluo);
+                              color: var(--noir);
                               margin-bottom: 15px;
                               text-transform: uppercase;
                               font-size: 18px;
@@ -201,7 +200,7 @@
                 }
 
                 .card p {
-                              color: var(--blanc);
+                              color: var(--noir);
                               margin-bottom: 20px;
                               font-size: 14px;
                 }
@@ -231,7 +230,7 @@
 
                 .page-title {
                               font-size: 52px;
-                              color: var(--vert-fluo);
+                              color: var(--noir);
                               margin: 60px 0 40px 0;
                               text-transform: uppercase;
                               letter-spacing: 2px;
@@ -247,7 +246,7 @@
                 }
 
                 .gallery-item {
-                              background: var(--gris-fonce);
+                              background: var(--blanc);
                               border: 2px solid var(--vert-fluo);
                               aspect-ratio: 1;
                               display: flex;
@@ -255,6 +254,7 @@
                               justify-content: center;
                               font-size: 60px;
                               transition: transform 0.3s;
+                              position: relative;
                 }
 
                 .gallery-item:hover {
@@ -266,22 +266,25 @@
                               position: absolute;
                               bottom: 10px;
                               left: 10px;
-                              background: var(--noir);
-                              color: var(--vert-fluo);
+                              background: var(--vert-fluo);
+                              color: var(--noir);
                               padding: 5px 10px;
                               font-size: 12px;
                               text-transform: uppercase;
+                              font-weight: bold;
                 }
 
                 .blog-post {
-                              background: var(--gris-fonce);
+                              background: var(--blanc);
                               border-left: 4px solid var(--vert-fluo);
+                              border: 2px solid var(--vert-fluo);
+                              border-left-width: 4px;
                               padding: 30px;
                               margin: 30px 0;
                 }
 
                 .blog-post h3 {
-                              color: var(--vert-fluo);
+                              color: var(--noir);
                               margin-bottom: 10px;
                               font-size: 22px;
                 }
@@ -291,10 +294,11 @@
                               font-size: 12px;
                               margin-bottom: 15px;
                               text-transform: uppercase;
+                              font-weight: bold;
                 }
 
                 .blog-post p {
-                              color: var(--blanc);
+                              color: var(--noir);
                               margin-bottom: 15px;
                               line-height: 1.8;
                 }
@@ -306,13 +310,13 @@
                 }
 
                 .login-box {
-                              background: var(--gris-fonce);
+                              background: var(--blanc);
                               border: 2px solid var(--vert-fluo);
                               padding: 40px;
                 }
 
                 .login-box h2 {
-                              color: var(--vert-fluo);
+                              color: var(--noir);
                               margin-bottom: 30px;
                               text-transform: uppercase;
                               border: none;
@@ -325,26 +329,27 @@
 
                 label {
                               display: block;
-                              color: var(--vert-fluo);
+                              color: var(--noir);
                               margin-bottom: 8px;
                               text-transform: uppercase;
                               font-size: 12px;
                               letter-spacing: 1px;
+                              font-weight: bold;
                 }
 
                 input[type="text"],
                 input[type="password"] {
                               width: 100%;
                               padding: 12px;
-                              background: var(--noir);
+                              background: var(--blanc);
                               border: 1px solid var(--vert-fluo);
-                              color: var(--vert-fluo);
-                              font-family: 'Courier New', monospace;
+                              color: var(--noir);
+                              font-family: Arial, sans-serif;
                 }
 
                 input[type="text"]::placeholder,
                 input[type="password"]::placeholder {
-                              color: rgba(57, 255, 20, 0.5);
+                              color: #999;
                 }
 
                 .login-btn {
@@ -357,20 +362,21 @@
                               font-weight: bold;
                               cursor: pointer;
                               margin-top: 20px;
+                              font-family: Arial, sans-serif;
                 }
 
                 .login-btn:hover {
-                              background: var(--noir);
-                              color: var(--vert-fluo);
+                              background: var(--blanc);
+                              color: var(--noir);
                 }
 
                 /* FOOTER */
                 footer {
-                              background: var(--gris-fonce);
+                              background: var(--blanc);
                               border-top: 3px solid var(--vert-fluo);
                               padding: 40px 20px;
                               text-align: center;
-                              color: var(--blanc);
+                              color: var(--noir);
                 }
 
                 footer p {
@@ -380,6 +386,7 @@
                 .footer-link {
                               color: var(--vert-fluo);
                               text-decoration: none;
+                              font-weight: bold;
                 }
 
                 .footer-link:hover {
@@ -478,7 +485,7 @@
                           <div class="gallery-item">🎭<div class="gallery-item-label">Scènes</div>div></div>div>
               </div>div>
               
-              <h3 style="color: var(--vert-fluo); margin-top: 60px; text-transform: uppercase;">À Propos</h3>
+              <h3 style="color: var(--noir); margin-top: 60px; text-transform: uppercase; border-bottom: 2px solid var(--vert-fluo); padding-bottom: 10px;">À Propos</h3>
               <p style="margin-top: 20px;">Cette collection documente la diversité et l'énergie de Paris à travers l'objectif. Chaque photo raconte une histoire, capte un moment, explore une perspective unique de la capitale française.</p>
       </div>div>
   </div>div>
@@ -559,14 +566,14 @@
                                                               </div>div>
                                                               <button type="submit" class="login-btn">Connexion</button>button>
                                           </form>form>
-                                          <p style="color: var(--vert-fluo); font-size: 12px; margin-top: 20px; text-align: center;">
+                                          <p style="color: var(--vert-fluo); font-size: 12px; margin-top: 20px; text-align: center; font-weight: bold;">
                                                                 Test: Jean Dupont / photo2026
                                           </p>
                           </div>div>
               </div>div>
 
                 <div id="clientArea" style="display: none; margin-top: 60px;">
-                              <h2 style="color: var(--vert-fluo); text-align: center;">Bienvenue, <span id="clientNameDisplay"></span>span></h2>
+                              <h2 style="color: var(--noir); text-align: center;">Bienvenue, <span id="clientNameDisplay"></span>span></h2>
 
                               <div class="gallery-grid" style="margin-top: 40px;">
                                                 <div class="gallery-item">📸<div class="gallery-item-label">Galerie 1</div>div></div>div>
